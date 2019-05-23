@@ -10,14 +10,14 @@ h1 {
     color: #6636BE;
     font-weight: 700;
     font-style: normal;
-/*    padding-left: 200px;*/
+    /*    padding-left: 200px;*/
 }
 
 h2 {
     color: #000;
     font-weight: 700;
     font-style: normal;
-/*    padding-left: 200px;*/
+    /*    padding-left: 200px;*/
     font-size: 25px;
 }
 
@@ -28,6 +28,7 @@ h3 {
 h4 {
     text-align: center;
 }
+
 /* GRID */
 
 .headgrid {
@@ -209,34 +210,64 @@ h4 {
 
 .happytails {
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px 200px 20px 200px;
 }
 
-.tail1, .tail2, .tail3 {
+.tail {
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
-.overlay {
-  position: absolute;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #6636BE;
+
+.tail1, .tail2, .tail3 {
+    height: 300px;
+    width: 300px;
 }
 
-.happytails:hover .overlay {
-  opacity: 1;
+.overlay1, .overlay2, .overlay3 {
+    position:absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #6636BE;
 }
 
+.tail1:hover .overlay1 {
+    opacity: 1;
+}
+
+.tail2:hover .overlay2 {
+    opacity: 1;
+}
+.tail3:hover .overlay3 {
+    opacity: 1;
+}
 .text {
-  color: white;
-  font-size: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    margin: 0px;
+    height: relative;
+    background-color: #70C2D4;
+    padding: 20px;
+    color: white;
+    list-style-type: none;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
