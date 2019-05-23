@@ -27,6 +27,7 @@ h3 {
 
 h4 {
     text-align: center;
+    margin: 0px;
 }
 
 /* GRID */
@@ -97,6 +98,22 @@ h4 {
     float: right;
 }
 
+/* FOOTER */
+
+.footer {
+    position: relative;
+    margin-top: 20px;
+    height: relative;
+    background-color: #70C2D4;
+    padding: 20px;
+    color: white;
+    list-style-type: none;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
 
 /* SLIDESHOW */
 
@@ -210,7 +227,6 @@ h4 {
 
 .happytails {
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px 200px 20px 200px;
 }
@@ -255,19 +271,4 @@ h4 {
     -ms-transform: translate(-50%, -50%);
 }
 
-/* FOOTER */
 
-.footer {
-    position: relative;
-    margin: 0px;
-    height: relative;
-    background-color: #70C2D4;
-    padding: 20px;
-    color: white;
-    list-style-type: none;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-}
