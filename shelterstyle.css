@@ -213,7 +213,7 @@ h4 {
     padding: 10px 200px 20px 200px;
 }
 
-.tail {
+.tail1, .tail2, .tail3 {
     width: 300px;
     height: 300px;
     object-fit: cover;
